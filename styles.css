@@ -1,0 +1,16 @@
+.logo 
+{
+    display: flex;
+    width: 10%;
+    height: 10%;
+}
+
+nav 
+{
+    display: inline-flex;
+}
+
+nav a
+{
+    margin: 10px 20px;
+}
