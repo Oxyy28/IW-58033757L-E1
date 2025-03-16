@@ -1,33 +1,212 @@
+header
+{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
 .cabecera
 {
-    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .logo 
 {
     display: flex;
-    height: 10%;
-    margin-left: 20px;
-    margin-right: 50px;
-    width: 10%;
+    height: 20%;
+    width: 20%;
 }
+.logo img
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
 .menu
 {
     display: flex;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 10px 20px;
     width: 60%;
 }
 
+section
+{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
 
 nav 
 {
     display: inline-flex;
-    width: 20%;
+    width: 100%;
 }
-
 nav a
 {
-    width: 100px;
-    margin: 10px 20px;
+    width: 25%;
+    text-align: center;
+    margin: 10px 5px;
+    color: white;
+}
+nav a:hover
+{
+    color: #dd7733;
+}
+
+article 
+{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 20px;
+    max-width: 80%;
+}
+article h1 
+{
+    color: black;
+    font-size: 2em;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center; 
+}
+.conocenos1 
+{
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+article section 
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+}
+article section h2 
+{
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+article section p 
+{
+    color: black;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    max-width: 100%;
+}
+@media (max-width: 700px) {
+    .conocenos1 
+    {
+        flex-direction: column; 
+    }
+    article section 
+    {
+        width: 100%; 
+    }
+}
+
+.conocenos2 
+{
+    margin-top: 20px;
+}
+.conocenos2 h2 
+{
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.conocenos2 p 
+{
+    color: black;
+    font-size: 1em;
+    margin-bottom: 20px;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.conocenos3 
+{
+    margin-top: 20px;
+}
+.conocenos3 h2 
+{
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse; 
+    border-spacing: 10px; 
+}
+th, td 
+{
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th 
+{
+    text-align: left; 
+}
+td:first-child, th:first-child, td:nth-child(2), th:nth-child(2) 
+{
+    text-align: center;
+}
+td:nth-child(3), th:nth-child(3) 
+{
+    text-align: left;
+}
+@media (max-width: 700px) {
+    td:nth-child(3), th:nth-child(3) 
+    {
+        display: none;
+    }
+}
+
+
+
+.pie
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+.foot
+{
+    padding-right: 15px;
+    display: flex;
+    justify-content: right;
+    color: white;
+    width: 50%;
+}
+.direccion
+{
+    gap: 10px;
+    display: flex;
+    justify-content: left;
+    color: white;
+    width: 50%;
+}
+.pie a
+{
+    gap: 10px;
+    display: flex;
+    justify-content: left;
+    color: white;
+    width: 50%;
 }
