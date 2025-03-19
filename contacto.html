@@ -60,7 +60,7 @@
                         <input type="text" name="nombre-feedback" id="nombre-feedback" required>
                         <br>
                         <label for="feedback">Comentarios y Mejoras: </label>
-                        <textarea name="feedback" id="feedback" rows="5" required></textarea>
+                        <textarea name="feedback" id="feedback" rows="4" required></textarea>
                         <br>
                         <label for="calificacion">Calificación: </label>
                         <select name="calificacion" id="calificacion">
@@ -70,7 +70,16 @@
                             <option value="4">4 - Bueno</option>
                             <option value="5">5 - Excelente</option>
                         </select>
-                        <br><br>
+                        <br><br> <p>¿Está activo el proyecto?</p>
+                        <label for="activo-si">
+                            <input type="radio" name="estado-proyecto" id="activo-si" value="si">
+                            Sí, está activo
+                        </label>
+                        <label for="activo-no">
+                            <input type="radio" name="estado-proyecto" id="activo-no" value="no" checked>
+                            No, no está activo
+                        </label>
+                        <br>
                         <input type="submit" value="Enviar Feedback">
                     </fieldset>
                 </form>
@@ -96,7 +105,7 @@
                         <input type="date" name="fecha-disponibilidad" id="fecha-disponibilidad" required>
                         <br><br> 
                         <label for="documento">Adjuntar Documento (CV, Carta, etc.): </label>
-                        <!-- Dejamos el type vacio para que no muestre en caso de clickar una ventana para agregar documentos, se tendia que añadir type="file" -->
+                        <!-- Dejamos el type vacio para que no muestre el baton de clickar y que no muestre la ventana emergente, se tendia que añadir type="file" -->
                         <input type="" name="documento" id="documento" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" required>
                         <br><br>
                         <input type="submit" value="Enviar Solicitud de Trabajo">
@@ -106,7 +115,7 @@
         </article>
         <footer class="pie">
             <div class="direcciones">
-                <p class="direccion">Dirección: 
+                <p class="direccion">Dirección Llodio: 
                     <a href="https://maps.app.goo.gl/q5mRCZA8ahfNzSb18" target="_blank">C. Tres Cruces, 7, 2º (Pol.Ind, 01400 Arza, Álava)</a>
                 </p>
                 <p class="direccion">Dirección Vitoria: 

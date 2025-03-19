@@ -179,16 +179,15 @@ article section p
     width: 100vw;
     max-width: 100vw;
     padding: 0;
-    overflow: hidden;
     position: relative;
-    left: -13%;
+    left: -7%;
 }
 .foto img 
 {
-    width: 34%;
+    width: 40%;
     display: block;
 }
-
+/* Aqui organizamos el texte de abajo respecto a los dos textos de arriba */
 .conocenos2 
 {
     margin-top: 20px;
@@ -426,6 +425,7 @@ tr, td
 {
     display: flex;
     flex-direction: column;
+    margin-left: 40px;
 }
 #desplegable 
 {
@@ -582,7 +582,6 @@ input[type="file"]::file-selector-button:hover
 }
 
 /*Aqui agregamos todos los css en funcion del tamaño de la pantalla */
-
 @media (max-width: 600px) 
 {
     .clientes li 
