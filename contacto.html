@@ -20,8 +20,90 @@
                     <a class="seleccionado" href="./contacto.html">Contacto</a>
                 </nav>
             </section>
+            <section class="git">
+                <a href="https://github.com/Oxyy28/IW-58033757L-E1" target="_blank">
+                    <img src="./img/GitHub.png" alt="GitHub">
+                </a>
+            </section>
         </header>
-        
+        <article>
+            <section class="fomrularios1">
+                <h2>Formulario de Solicitud de Proyecto</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Detalles del Proyecto</legend>
+                        <label for="nombre-proyecto">Nombre del Proyecto: </label>
+                        <input type="text" name="nombre-proyecto" id="nombre-proyecto" required>
+                        <br>
+                        <label for="descripcion-proyecto">Descripción del Proyecto: </label>
+                        <textarea name="descripcion-proyecto" id="descripcion-proyecto" rows="5" required></textarea>
+                        <br>
+                        <label for="fecha-entrega">Fecha de Entrega: </label>
+                        <input type="date" name="fecha-entrega" id="fecha-entrega" required>
+                        <br>
+                        <label for="presupuesto">Presupuesto Estimado: </label>
+                        <input type="text" name="presupuesto" id="presupuesto" required>
+                        <br>
+                        <label for="contacto-proyecto">Correo Electrónico: </label>
+                        <input type="email" name="contacto-proyecto" id="contacto-proyecto" required>
+                        <br><br>
+                        <input type="submit" value="Enviar Solicitud">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="fomrularios1">
+                <h2>Formulario de Feedback de Proyecto</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Detalles del Feedback</legend>
+                        <label for="nombre-feedback">Nombre del Proyecto: </label>
+                        <input type="text" name="nombre-feedback" id="nombre-feedback" required>
+                        <br>
+                        <label for="feedback">Comentarios y Mejoras: </label>
+                        <textarea name="feedback" id="feedback" rows="5" required></textarea>
+                        <br>
+                        <label for="calificacion">Calificación: </label>
+                        <select name="calificacion" id="calificacion">
+                            <option value="1">1 - Muy malo</option>
+                            <option value="2">2 - Malo</option>
+                            <option value="3">3 - Regular</option>
+                            <option value="4">4 - Bueno</option>
+                            <option value="5">5 - Excelente</option>
+                        </select>
+                        <br><br>
+                        <input type="submit" value="Enviar Feedback">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="fomrularios2">
+                <h2>Formulario de Solicitud de Trabajo</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Detalles de la Solicitud</legend>
+                        <label for="nombre-trabajo">Nombre Completo: </label>
+                        <input type="text" name="nombre-trabajo" id="nombre-trabajo" required>
+                        <br>
+                        <label for="email-trabajo">Correo Electrónico: </label>
+                        <input type="email" name="email-trabajo" id="email-trabajo" required>
+                        <br>
+                        <label for="puesto">Puesto al que aspira: </label>
+                        <input type="text" name="puesto" id="puesto" required>
+                        <br>
+                        <label for="experiencia">¿Que experiencia previa tienes? </label>
+                        <textarea name="experiencia" id="experiencia" rows="5" required></textarea>
+                        <br>
+                        <label for="fecha-disponibilidad">¿Desde que fecha podrias empezar a trabajar?</label>
+                        <input type="date" name="fecha-disponibilidad" id="fecha-disponibilidad" required>
+                        <br><br> 
+                        <label for="documento">Adjuntar Documento (CV, Carta, etc.): </label>
+                        <!-- Dejamos el type vacio para que no muestre en caso de clickar una ventana para agregar documentos, se tendia que añadir type="file" -->
+                        <input type="" name="documento" id="documento" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" required>
+                        <br><br>
+                        <input type="submit" value="Enviar Solicitud de Trabajo">
+                    </fieldset>
+                </form>
+            </section>
+        </article>
         <footer class="pie">
             <div class="direcciones">
                 <p class="direccion">Dirección: 
