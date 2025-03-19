@@ -28,6 +28,7 @@
     color: #dd7733;
 }
 
+/* Aqui ponemos el css para todas las cabeceras comunes */
 header
 {
     display: flex;
@@ -36,18 +37,17 @@ header
     width: 100%;
     height: 80px;
 }
-
 .cabecera
 {
     margin-bottom: 20px;
     display: flex;
 }
-
 .logo 
 {
+    margin-left: 30px;
     display: flex;
     height: 50%;
-    width: 15%;
+    width: 12%;
 }
 .logo img
 {
@@ -55,7 +55,6 @@ header
     height: 100%;
     background-color: black;
 }
-
 .menu
 {
     display: flex;
@@ -63,7 +62,6 @@ header
     margin: 10px 20px;
     width: 60%;
 }
-
 section
 {
     display: flex;
@@ -71,10 +69,12 @@ section
     width: 60%;
 }
 
+/* Aqui establecemos el estilo de la cabecera de navegacion para movernos por las distintas pantallas */
 nav 
 {
     display: inline-flex;
     width: 100%;
+    text-align: center;
 }
 nav a
 {
@@ -87,9 +87,20 @@ nav a:hover
 {
     color: #dd7733;
 }
+.seleccionado
+{
+    background-color: #dd7733;
+    height: 50px;
+    border-radius: 10px;
+    color: black;
+}
 
+/* Establecemos un estilo para la apilacion de manera horizontal y vertical de varios textos  */
 .conjunto
 {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
     margin-bottom: 50px;
 }
 article 
@@ -130,20 +141,21 @@ article section
 }
 article section h2 
 {
-    color: black;
+    color: #dd7733;
     font-size: 1.5em;
     margin-bottom: 20px;
     width: 100%;
 }
 article section p 
 {
-    color: black;
+    color: #dd7733;
     font-size: 1em;
     margin-bottom: 20px;
     margin-top: 0;
     max-width: 100%;
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) 
+{
     .conocenos1 
     {
         flex-direction: column; 
@@ -153,7 +165,6 @@ article section p
         width: 100%; 
     }
 }
-
 .foto 
 {
     display: flex;
@@ -174,8 +185,9 @@ article section p
 .conocenos2 
 {
     margin-top: 20px;
-    background-color: black;
-    color: #dd7733;
+    background-color: #dd7733;
+    border-radius: 5px;
+    color: black;
     padding: 10px;
 }
 .conocenos2 h2 
@@ -198,24 +210,25 @@ article section p
 }
 .conocenos3 h2 
 {
-    color: black;
+    color: white;
     font-size: 1.5em;
     margin-bottom: 20px;
     width: 100%;
 }
-
+/* Establecemos el estilo pata la tabla de los hitos */
 table 
 {
     width: 100%;
     border-collapse: collapse; 
     border-spacing: 10px;
-    background-color: black; 
-    color: #dd7733;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 th, td 
 {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid black;
 }
 table tr:last-child td 
 {
@@ -269,41 +282,7 @@ tr, td
     }
 }
 
-
-.pie
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    margin-top: 20px;
-}
-.direccion
-{
-    gap: 10px;
-    display: flex;
-    justify-content: left;
-    color: white;
-    width: 50%;
-}
-.pie a
-{
-    gap: 10px;
-    display: flex;
-    justify-content: left;
-    color: white;
-    width: 50%;
-}
-.pie-ali
-{
-    padding-right: 15px;
-    display: flex;
-    justify-content: right;
-    color: white;
-    width: 50%;
-}
-
+/* Aqui ira nuestro estilo de la pagina principal */
 .subcabecera 
 {
     background-color: black;
@@ -311,7 +290,6 @@ tr, td
     padding: 2rem;
     margin: 20px 5%;
 }
-
 .info span 
 {
     color: white;
@@ -341,7 +319,6 @@ tr, td
     margin-top: 2rem;
     flex-wrap: wrap;
 }
-
 .expo 
 {
     background-color: #1b1b1b;
@@ -374,13 +351,15 @@ tr, td
     font-size: 0.9rem;
     line-height: 1.4;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1020px) 
+{
     .expo
     {
         width: 40%;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) 
+{
     .expo-content
     {
         flex-direction: column;
@@ -391,17 +370,181 @@ tr, td
     }
 }
 
-.btn 
+/* Aqui ponemos el estilo para la pantalla de clientes y sus agrupaciones por sectores */
+.clientes
 {
-    background-color: #dd7733;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.btn:hover {
+.clientes h2
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.clientes p
+{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.clientes ul 
+{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+.clientes li 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 30%; 
+}
+.clientes li img 
+{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+@media (max-width: 1024px) 
+{
+    .clientes li 
+    {
+        width: 45%;
+    }
+    .menu-lateral {
+        display: none;
+    }
+}
+@media (max-width: 600px) 
+{
+    .clientes li 
+    {
+        width: 100%;
+    }
+}
+
+/* Ponemosun estilo para un menu lateral flexible para desplazarnos por la pantalla de clientes */
+.menu-lateral 
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: #2e1f0e;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    transition: transform 0.3s ease;
+    z-index: 999;
+    width: max-content;
+}
+.menu-lateral ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    background-color: transparent;
+}
+.menu-lateral li 
+{
+    margin-bottom: 1rem;
+    white-space: nowrap;
+}
+.menu-lateral a 
+{
+    color: white;
+    text-decoration: none;
+}
+.menu-lateral a:hover 
+{
+    text-decoration: underline;
+}
+.menu-btn 
+{
+    background-color: #2e1f0e;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    max-height: min-content;
+}
+.menu-lateral ul 
+{
+    display: none;
+}
+.menu-lateral:hover ul,
+#desplegable:checked ~ ul 
+{
+    display: flex;
+    flex-direction: column;
+}
+#desplegable {
+    display: none;
+}
+
+
+/* Aqui va el estilo de piue da pagina para todas las pantallas */
+.pie 
+{
+    display: flex;
+    justify-content: space-between;
     background-color: black;
-    color: #dd7733;
-}  
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.direcciones 
+{
+    width: 70%; 
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+.direccion 
+{
+    color: white;
+    margin: 0;
+}
+.pie a 
+{
+    color: white;
+    text-decoration: none;
+}
+.pie-ali 
+{
+    color: white;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+    margin-top: 10px;
+    text-align: right;
+}
+@media (max-width: 750px) 
+{
+    .pie 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pie-ali 
+    {
+        justify-content: center; 
+        text-align: center;
+    }
+}
